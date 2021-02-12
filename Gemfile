@@ -75,7 +75,7 @@ gem "pusher-push-notifications", "~> 1.1" # Pusher Push Notifications Ruby serve
 gem "rack-attack", "~> 6.3.0" # Used to throttle requests to prevent brute force attacks
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
-gem "rails", "~> 5.2" # Ruby on Rails
+gem "rails", "~> 6.0", ">= 6.0.3.5" # Ruby on Rails
 gem "rails-settings-cached", ">= 2.1.1" # Settings plugin for Rails that makes managing a table of global key, value pairs easy.
 gem "ransack", "~> 2.3" # Searching and sorting
 gem "recaptcha", "~> 5.5", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
@@ -86,7 +86,7 @@ gem "reverse_markdown", "~> 2.0" # Map simple html back into markdown
 gem "rolify", "~> 5.2" # Very simple Roles library
 gem "rouge", "~> 3.18" # A pure-ruby code highlighter
 gem "rubyzip", "~> 2.3" # Rubyzip is a ruby library for reading and writing zip files
-gem "s3_direct_upload", "~> 0.1" # Direct Upload to Amazon S3
+gem "s3_direct_upload", "~> 0.1", ">= 0.1.7" # Direct Upload to Amazon S3
 gem "sassc-rails", "~> 2.1.2" # Integrate SassC-Ruby into Rails
 gem "sidekiq", "~> 6.0.7" # Sidekiq is used to process background jobs with the help of Redis
 gem "sidekiq-unique-jobs", "~> 6.0.21" # Ensures that Sidekiq jobs are unique when enqueued
@@ -98,7 +98,7 @@ gem "storext", "~> 3.1" # Add type-casting and other features on top of ActiveRe
 gem "stripe", "~> 5.21" # Ruby library for the Stripe API
 gem "strong_migrations", "~> 0.6" # Catch unsafe migrations
 gem "timber", "~> 3.0" # Great Ruby logging made easy
-gem "timber-rails", "~> 1.0" #  Timber integration for Rails
+gem "timber-rails", "~> 1.0", ">= 1.0.1" #  Timber integration for Rails
 gem "twilio-ruby", "~> 5.34" # The official library for communicating with the Twilio REST API
 gem "twitter", "~> 7.0" # A Ruby interface to the Twitter API
 gem "uglifier", "~> 4.2" # Uglifier minifies JavaScript files
