@@ -23,7 +23,7 @@ gem "autoprefixer-rails", "~> 9.7" # Parse CSS and add vendor prefixes to CSS ru
 gem "aws-sdk-lambda", "~> 1.39" # Official AWS Ruby gem for AWS Lambda
 gem "blazer", "~> 2.2.2" # Allows admins to query data
 gem "bootsnap", ">= 1.1.0", require: false # Boot large ruby/rails apps faster
-gem "buffer", "~> 0.1" # Buffer is a Ruby Wrapper for the Buffer API
+gem "buffer", "~> 0.1", ">= 0.1.3" # Buffer is a Ruby Wrapper for the Buffer API
 gem "carrierwave", "~> 2.0" # Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends
 gem "carrierwave-bombshelter", "~> 0.2" # Protect your carrierwave from image bombs
 gem "cld", "~> 0.8" # Compact Language Detection for Ruby
