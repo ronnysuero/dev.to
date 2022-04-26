@@ -47,7 +47,7 @@ gem "figaro", "~> 1.1" # Simple, Heroku-friendly Rails app configuration using E
 gem "fog-aws", "~> 3.6" # 'fog' gem to support Amazon Web Services
 gem "front_matter_parser", "~> 0.2" # Parse a front matter from syntactically correct strings or files
 gem "gemoji", "~> 4.0.0.rc2" # Character information and metadata for standard and custom emoji
-gem "gibbon", "~> 3.3" # API wrapper for MailChimp's API
+gem "gibbon", "~> 3.4", ">= 3.4.4" # API wrapper for MailChimp's API
 gem "honeybadger", "~> 4.6" # Used for tracking application errors
 gem "honeycomb-beeline", "~> 2.0.0" # Monitoring and Observability gem
 gem "html_truncator", "~> 0.4" # Truncate an HTML string properly
