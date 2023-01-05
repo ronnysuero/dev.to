@@ -17,7 +17,7 @@ gem "acts_as_follower", github: "thepracticaldev/acts_as_follower", branch: "mas
 gem "addressable", "~> 2.7" # A replacement for the URI implementation that is part of Ruby's standard library
 gem "administrate", "~> 0.13" # A Rails engine that helps you put together a super-flexible admin dashboard
 gem "ahoy_email", "~> 1.1" # Email analytics for Rails
-gem "algorithmia", "~> 1.1" # Ruby Client for Algorithmia Algorithms and Data API
+gem "algorithmia", "~> 1.1", ">= 1.1.0" # Ruby Client for Algorithmia Algorithms and Data API
 gem "ancestry", "~> 3.0" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
 gem "autoprefixer-rails", "~> 9.7" # Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website
 gem "aws-sdk-lambda", "~> 1.39" # Official AWS Ruby gem for AWS Lambda
@@ -52,7 +52,7 @@ gem "honeybadger", "~> 4.6" # Used for tracking application errors
 gem "honeycomb-beeline", "~> 2.0.0" # Monitoring and Observability gem
 gem "html_truncator", "~> 0.4" # Truncate an HTML string properly
 gem "htmlentities", "~> 4.3", ">= 4.3.4" # A module for encoding and decoding (X)HTML entities
-gem "httparty", "~> 0.18" # Makes http fun! Also, makes consuming restful web services dead easy
+gem "httparty", "~> 0.21", ">= 0.21.0" # Makes http fun! Also, makes consuming restful web services dead easy
 gem "inline_svg", "~> 1.7" # Embed SVG documents in your Rails views and style them with CSS
 gem "jbuilder", "~> 2.10" # Create JSON structures via a Builder-style DSL
 gem "jquery-rails", "~> 4.3" #  A gem to automate using jQuery with Rails
