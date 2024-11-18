@@ -16,7 +16,7 @@ gem "acts-as-taggable-on", "~> 6.5" # A tagging plugin for Rails applications th
 gem "acts_as_follower", github: "thepracticaldev/acts_as_follower", branch: "master" # Allow any model to follow any other model
 gem "addressable", "~> 2.7" # A replacement for the URI implementation that is part of Ruby's standard library
 gem "administrate", "~> 0.13" # A Rails engine that helps you put together a super-flexible admin dashboard
-gem "ahoy_email", "~> 1.1" # Email analytics for Rails
+gem "ahoy_email", "~> 2.4", ">= 2.4.0" # Email analytics for Rails
 gem "algorithmia", "~> 1.1" # Ruby Client for Algorithmia Algorithms and Data API
 gem "ancestry", "~> 3.0" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
 gem "autoprefixer-rails", "~> 9.7" # Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website
