@@ -15,7 +15,7 @@ gem "activerecord-import", "~> 1.0" # Adds ability to bulk create activerecord o
 gem "acts-as-taggable-on", "~> 6.5" # A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts
 gem "acts_as_follower", github: "thepracticaldev/acts_as_follower", branch: "master" # Allow any model to follow any other model
 gem "addressable", "~> 2.7" # A replacement for the URI implementation that is part of Ruby's standard library
-gem "administrate", "~> 0.13" # A Rails engine that helps you put together a super-flexible admin dashboard
+gem "administrate", "~> 0.18", ">= 0.18.0" # A Rails engine that helps you put together a super-flexible admin dashboard
 gem "ahoy_email", "~> 1.1" # Email analytics for Rails
 gem "algorithmia", "~> 1.1" # Ruby Client for Algorithmia Algorithms and Data API
 gem "ancestry", "~> 3.0" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
@@ -75,8 +75,8 @@ gem "pusher-push-notifications", "~> 1.1" # Pusher Push Notifications Ruby serve
 gem "rack-attack", "~> 6.3.0" # Used to throttle requests to prevent brute force attacks
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
-gem "rails", "~> 5.2" # Ruby on Rails
-gem "rails-settings-cached", ">= 2.1.1" # Settings plugin for Rails that makes managing a table of global key, value pairs easy.
+gem "rails", "~> 7.0", ">= 7.0.0" # Ruby on Rails
+gem "rails-settings-cached", ">= 2.8.3" # Settings plugin for Rails that makes managing a table of global key, value pairs easy.
 gem "ransack", "~> 2.3" # Searching and sorting
 gem "recaptcha", "~> 5.5", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
 gem "redcarpet", "~> 3.5" # A fast, safe and extensible Markdown to (X)HTML parser
@@ -88,8 +88,8 @@ gem "rouge", "~> 3.18" # A pure-ruby code highlighter
 gem "rubyzip", "~> 2.3" # Rubyzip is a ruby library for reading and writing zip files
 gem "s3_direct_upload", "~> 0.1" # Direct Upload to Amazon S3
 gem "sassc-rails", "~> 2.1.2" # Integrate SassC-Ruby into Rails
-gem "sidekiq", "~> 6.0.7" # Sidekiq is used to process background jobs with the help of Redis
-gem "sidekiq-unique-jobs", "~> 6.0.21" # Ensures that Sidekiq jobs are unique when enqueued
+gem "sidekiq", "~> 6.1.0" # Sidekiq is used to process background jobs with the help of Redis
+gem "sidekiq-unique-jobs", "~> 8.0.0" # Ensures that Sidekiq jobs are unique when enqueued
 gem "sitemap_generator", "~> 6.1" # SitemapGenerator is a framework-agnostic XML Sitemap generator
 gem "slack-notifier", "~> 2.3" # A slim ruby wrapper for posting to slack webhooks
 gem "sprockets", "~> 4.0" # Sprockets is a Rack-based asset packaging system
@@ -147,7 +147,7 @@ group :test do
   gem "exifr", ">= 1.3.6" # EXIF Reader is a module to read EXIF from JPEG and TIFF images
   gem "factory_bot_rails", "~> 5.2" # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
   gem "launchy", "~> 2.5" # Launchy is helper class for launching cross-platform applications in a fire and forget manner.
-  gem "pundit-matchers", "~> 1.6" # A set of RSpec matchers for testing Pundit authorisation policies
+  gem "pundit-matchers", "~> 3.0", ">= 3.0.0" # A set of RSpec matchers for testing Pundit authorisation policies
   gem "rspec-retry", "~> 0.6" # retry intermittently failing rspec examples
   gem "ruby-prof", "~> 1.3", require: false # ruby-prof is a fast code profiler for Ruby
   gem "shoulda-matchers", "~> 4.3.0", require: false # Simple one-liner tests for common Rails functionality
