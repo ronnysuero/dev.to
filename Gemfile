@@ -5,30 +5,30 @@ source "https://rubygems.org"
 ruby File.read(File.join(File.dirname(__FILE__), ".ruby-version")).strip
 
 group :production do
-  gem "hypershield", "~> 0.2.0" # Allow admins to query data via internal
+  gem "hypershield", "~> 0.2.1" # Allow admins to query data via internal
   gem "nakayoshi_fork", "~> 0.0.4" # solves CoW friendly problem on MRI 2.2 and later
   gem "rack-host-redirect", "~> 1.3" # Lean and simple host redirection via Rack middleware
 end
 
 gem "active_record_union", "~> 1.3" # Adds proper union and union_all methods to ActiveRecord::Relation
-gem "activerecord-import", "~> 1.0" # Adds ability to bulk create activerecord objects
-gem "acts-as-taggable-on", "~> 6.5" # A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts
+gem "activerecord-import", "~> 1.0", ">= 1.0.5" # Adds ability to bulk create activerecord objects
+gem "acts-as-taggable-on", "~> 10.0", ">= 10.0.0" # A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts
 gem "acts_as_follower", github: "thepracticaldev/acts_as_follower", branch: "master" # Allow any model to follow any other model
 gem "addressable", "~> 2.7" # A replacement for the URI implementation that is part of Ruby's standard library
-gem "administrate", "~> 0.13" # A Rails engine that helps you put together a super-flexible admin dashboard
+gem "administrate", "~> 0.14", ">= 0.14.0" # A Rails engine that helps you put together a super-flexible admin dashboard
 gem "ahoy_email", "~> 1.1" # Email analytics for Rails
 gem "algorithmia", "~> 1.1" # Ruby Client for Algorithmia Algorithms and Data API
-gem "ancestry", "~> 3.0" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
+gem "ancestry", "~> 3.1", ">= 3.1.0" # Ancestry allows the records of a ActiveRecord model to be organized in a tree structure
 gem "autoprefixer-rails", "~> 9.7" # Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website
 gem "aws-sdk-lambda", "~> 1.39" # Official AWS Ruby gem for AWS Lambda
-gem "blazer", "~> 2.2.2" # Allows admins to query data
+gem "blazer", "~> 2.2.3" # Allows admins to query data
 gem "bootsnap", ">= 1.1.0", require: false # Boot large ruby/rails apps faster
 gem "buffer", "~> 0.1" # Buffer is a Ruby Wrapper for the Buffer API
 gem "carrierwave", "~> 2.0" # Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends
 gem "carrierwave-bombshelter", "~> 0.2" # Protect your carrierwave from image bombs
 gem "cld", "~> 0.8" # Compact Language Detection for Ruby
 gem "cloudinary", "~> 1.13" # Client library for easily using the Cloudinary service
-gem "counter_culture", "~> 2.3" # counter_culture provides turbo-charged counter caches that are kept up-to-date
+gem "counter_culture", "~> 2.4", ">= 2.4.0" # counter_culture provides turbo-charged counter caches that are kept up-to-date
 gem "ddtrace", "~> 0.34.2" # ddtrace is Datadog’s tracing client for Ruby.
 gem "devise", "~> 4.7" # Flexible authentication solution for Rails
 gem "dogstatsd-ruby", "~> 4.8" # A client for DogStatsD, an extension of the StatsD metric server for Datadog
@@ -42,7 +42,7 @@ gem "faraday-http-cache", "~> 2.2" # Middleware to handle HTTP caching
 gem "fast_jsonapi", "~> 1.5" # Serializer for Ruby objects
 gem "fastly", "~> 2.5" # Client library for the Fastly acceleration system
 gem "feedjira", "~> 3.1" # A feed fetching and parsing library
-gem "field_test", "~> 0.3" # A/B testing
+gem "field_test", "~> 0.4", ">= 0.4.0" # A/B testing
 gem "figaro", "~> 1.1" # Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
 gem "fog-aws", "~> 3.6" # 'fog' gem to support Amazon Web Services
 gem "front_matter_parser", "~> 0.2" # Parse a front matter from syntactically correct strings or files
@@ -56,7 +56,7 @@ gem "httparty", "~> 0.18" # Makes http fun! Also, makes consuming restful web se
 gem "inline_svg", "~> 1.7" # Embed SVG documents in your Rails views and style them with CSS
 gem "jbuilder", "~> 2.10" # Create JSON structures via a Builder-style DSL
 gem "jquery-rails", "~> 4.3" #  A gem to automate using jQuery with Rails
-gem "kaminari", "~> 1.2" # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator
+gem "kaminari", "~> 1.2", ">= 1.2.1" # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator
 gem "katex", "~> 0.6.0" # This rubygem enables you to render TeX math to HTML using KaTeX. It uses ExecJS under the hood
 gem "liquid", "~> 4.0" # A secure, non-evaling end user template engine with aesthetic markup
 gem "mini_racer", "~> 0.2.10" # Minimal embedded v8
@@ -75,9 +75,9 @@ gem "pusher-push-notifications", "~> 1.1" # Pusher Push Notifications Ruby serve
 gem "rack-attack", "~> 6.3.0" # Used to throttle requests to prevent brute force attacks
 gem "rack-cors", "~> 1.1" # Middleware that will make Rack-based apps CORS compatible
 gem "rack-timeout", "~> 0.6" # Rack middleware which aborts requests that have been running for longer than a specified timeout
-gem "rails", "~> 5.2" # Ruby on Rails
-gem "rails-settings-cached", ">= 2.1.1" # Settings plugin for Rails that makes managing a table of global key, value pairs easy.
-gem "ransack", "~> 2.3" # Searching and sorting
+gem "rails", "~> 7.1", ">= 7.1.5.2" # Ruby on Rails
+gem "rails-settings-cached", ">= 2.2.0" # Settings plugin for Rails that makes managing a table of global key, value pairs easy.
+gem "ransack", "~> 2.4", ">= 2.4.0" # Searching and sorting
 gem "recaptcha", "~> 5.5", require: "recaptcha/rails" # Helpers for the reCAPTCHA API
 gem "redcarpet", "~> 3.5" # A fast, safe and extensible Markdown to (X)HTML parser
 gem "redis", "~> 4.1.3" # Redis ruby client
@@ -96,7 +96,7 @@ gem "sprockets", "~> 4.0" # Sprockets is a Rack-based asset packaging system
 gem "staccato", "~> 0.5" # Ruby Google Analytics Measurement
 gem "storext", "~> 3.1" # Add type-casting and other features on top of ActiveRecord::Store.store_accessor
 gem "stripe", "~> 5.21" # Ruby library for the Stripe API
-gem "strong_migrations", "~> 0.6" # Catch unsafe migrations
+gem "strong_migrations", "~> 0.6", ">= 0.6.5" # Catch unsafe migrations
 gem "timber", "~> 3.0" # Great Ruby logging made easy
 gem "timber-rails", "~> 1.0" #  Timber integration for Rails
 gem "twilio-ruby", "~> 5.34" # The official library for communicating with the Twilio REST API
