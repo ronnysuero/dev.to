@@ -34,11 +34,11 @@ gem "devise", "~> 4.7" # Flexible authentication solution for Rails
 gem "dogstatsd-ruby", "~> 4.8" # A client for DogStatsD, an extension of the StatsD metric server for Datadog
 gem "doorkeeper", "~> 5.3" # Oauth 2 provider
 gem "dry-struct", "~> 1.2" # Typed structs and value objects
-gem "elasticsearch", "~> 7.6" # Powers DEVs core search functionality
+gem "elasticsearch", "~> 7.17", ">= 7.17.10" # Powers DEVs core search functionality
 gem "email_validator", "~> 2.0" # Email validator for Rails and ActiveModel
 gem "emoji_regex", "~> 3.0" # A pair of Ruby regular expressions for matching Unicode Emoji symbols
 gem "envied", "~> 0.9" # Ensure presence and type of your app's ENV-variables
-gem "faraday-http-cache", "~> 2.2" # Middleware to handle HTTP caching
+gem "faraday-http-cache", "~> 2.3", ">= 2.3.0" # Middleware to handle HTTP caching
 gem "fast_jsonapi", "~> 1.5" # Serializer for Ruby objects
 gem "fastly", "~> 2.5" # Client library for the Fastly acceleration system
 gem "feedjira", "~> 3.1" # A feed fetching and parsing library
@@ -47,7 +47,7 @@ gem "figaro", "~> 1.1" # Simple, Heroku-friendly Rails app configuration using E
 gem "fog-aws", "~> 3.6" # 'fog' gem to support Amazon Web Services
 gem "front_matter_parser", "~> 0.2" # Parse a front matter from syntactically correct strings or files
 gem "gemoji", "~> 4.0.0.rc2" # Character information and metadata for standard and custom emoji
-gem "gibbon", "~> 3.3" # API wrapper for MailChimp's API
+gem "gibbon", "~> 3.3", ">= 3.3.4" # API wrapper for MailChimp's API
 gem "honeybadger", "~> 4.6" # Used for tracking application errors
 gem "honeycomb-beeline", "~> 2.0.0" # Monitoring and Observability gem
 gem "html_truncator", "~> 0.4" # Truncate an HTML string properly
@@ -61,10 +61,10 @@ gem "katex", "~> 0.6.0" # This rubygem enables you to render TeX math to HTML us
 gem "liquid", "~> 4.0" # A secure, non-evaling end user template engine with aesthetic markup
 gem "mini_racer", "~> 0.2.10" # Minimal embedded v8
 gem "nokogiri", "~> 1.10" # HTML, XML, SAX, and Reader parser
-gem "octokit", "~> 4.16" # Simple wrapper for the GitHub API
+gem "octokit", "~> 4.23", ">= 4.23.0" # Simple wrapper for the GitHub API
 gem "oj", "~> 3.10" # JSON parser and object serializer
 gem "omniauth", "~> 1.9" # A generalized Rack framework for multiple-provider authentication
-gem "omniauth-github", "~> 1.3" # OmniAuth strategy for GitHub
+gem "omniauth-github", "~> 2.0", ">= 2.0.0" # OmniAuth strategy for GitHub
 gem "omniauth-twitter", "~> 1.4" # OmniAuth strategy for Twitter
 gem "patron", "~> 0.13.3" # HTTP client library based on libcurl, used with Elasticsearch to support http keep-alive connections
 gem "pg", "~> 1.2" # Pg is the Ruby interface to the PostgreSQL RDBMS
@@ -99,7 +99,7 @@ gem "stripe", "~> 5.21" # Ruby library for the Stripe API
 gem "strong_migrations", "~> 0.6" # Catch unsafe migrations
 gem "timber", "~> 3.0" # Great Ruby logging made easy
 gem "timber-rails", "~> 1.0" #  Timber integration for Rails
-gem "twilio-ruby", "~> 5.34" # The official library for communicating with the Twilio REST API
+gem "twilio-ruby", "~> 5.67", ">= 5.67.0" # The official library for communicating with the Twilio REST API
 gem "twitter", "~> 7.0" # A Ruby interface to the Twitter API
 gem "uglifier", "~> 4.2" # Uglifier minifies JavaScript files
 gem "ulid", "~> 1.2" # Universally Unique Lexicographically Sortable Identifier implementation for Ruby
